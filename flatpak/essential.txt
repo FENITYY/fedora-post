@@ -1,0 +1,7 @@
+com.github.tchx84.Flatseal
+com.discordapp.Discord
+com.spotify.Client
+io.github.jeffshee.Hidamari
+com.bitwarden.desktop
+com.logseq.Logseq
+com.simplenote.Simplenote

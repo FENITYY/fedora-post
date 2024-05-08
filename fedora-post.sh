@@ -266,3 +266,7 @@ while true; do
         invalid
     fi    
 done
+
+# TO-DO
+
+# add virtualization

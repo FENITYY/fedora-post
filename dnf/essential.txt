@@ -18,3 +18,4 @@ lmms
 klavaro
 tux-paint
 transmission-qt
+flameshot
