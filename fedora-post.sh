@@ -68,7 +68,7 @@ while true; do
     if command -v flatpak &> /dev/null; then
         echo "Flatpak is installed"
         flathub
-    
+        break
     else
         echo "Flatpak is not installed"
         while true; do
@@ -142,7 +142,7 @@ echo "NVIDIA"
 echo -e "######\n"
 
 while true; do
-    read -r -q "Do you want to install NVIDIA Drivers? y/n > " response
+    read -r -p "Do you want to install NVIDIA Drivers? y/n > " response
     if [[ $response =~ ^(y|Y)$ ]]; then
         sudo dnf install -y akmod-nvidia xorg-x11-drv-nvidia-cuda xorg-x11-drv-nvidia-cuda-libs vdpauinfo libva-vdpau-driver libva-utils vulkan
         echo "NVIDIA drivers installed successfully."
@@ -161,7 +161,7 @@ echo "Wine"
 echo -e "####\n"
 
 while true; do
-    read -r -q "Do you want to install Wine? y/n > " response
+    read -r -p "Do you want to install Wine? y/n > " response
 
     if [[ $response =~ ^(y|Y)$ ]]; then
         sudo dnf groupinstall -y "C Development Tools and Libraries"
@@ -184,7 +184,7 @@ echo "Fonts"
 echo -e "#####\n"
 
 while true; do
-    read -r -q "Do you want to install font (including Microsoft Fonts) ? y/n > " response
+    read -r -p "Do you want to install font (including Microsoft Fonts) ? y/n > " response
 
     if [[ $response =~ ^(y|Y)$ ]]; then
         sudo dnf install -y fira-code-fonts 'mozilla-fira*' 'google-roboto*'
@@ -211,7 +211,7 @@ echo "Essential Packages"
 echo -e "##################\n"
 
 while true; do
-    read -r -q "Do you want to install essential packages? y/n > " response
+    read -r -p "Do you want to install essential packages? y/n > " response
 
     if [[ $response =~ ^(y|Y)$ ]]; then
         package_install ./dnf/essential.txt ./flatpak/essential.txt
@@ -221,23 +221,23 @@ while true; do
     elif [[ $response =~ ^(n|N)$ ]]; then
         echo "SKIPPED - Essential Packages"
         break
-    
+
     else
         invalid
-    fi    
+    fi
 done
 
 echo "Development Packages"
 echo -e "####################\n"
 
 while true; do
-    read -r -q "Do you want to install development packages? y/n > " response
+    read -r -p "Do you want to install development packages? y/n > " response
 
     if [[ $response =~ ^(y|Y)$ ]]; then
         package_install ./dnf/dev.txt ./flatpak/dev.txt
         echo "Development packages installed successfully."
         break
-    
+
     elif [[ $response =~ ^(n|N)$ ]]; then
         echo "SKIPPED - Development Packages"
         break
@@ -251,7 +251,7 @@ echo "Gaming Packages"
 echo -e "###############\n"
 
 while true; do
-    read -r -q "Do you want to install gaming packages? y/n > " response
+    read -r -p "Do you want to install gaming packages? y/n > " response
 
     if [[ $response =~ ^(y|Y)$ ]]; then
         package_install ./dnf/gaming.txt ./flatpak/gaming.txt
