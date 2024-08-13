@@ -1,14 +1,1 @@
-git
-git-lfs
-python3-devel
-anaconda
-R
-python3-numpy
-python3-pandas
-python3-matplotlib
-python3-scipy
-nodejs
-nodejs-npm
-gcc
-gcc-c++
-cmake
+git git-lfs python3-devel anaconda R python3-numpy python3-pandas python3-matplotlib python3-scipy nodejs nodejs-npm gcc gcc-c++ cmake

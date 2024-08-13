@@ -1,5 +1,1 @@
-io.github.shiftey.Desktop
-flathub org.fritzing.Fritzing
-cc.arduino.IDE2
-in.srev.guiscrcpy
-com.jgraph.drawio.desktop
+io.github.shiftey.Desktop org.fritzing.Fritzing cc.arduino.IDE2 in.srev.guiscrcpy com.jgraph.drawio.desktop

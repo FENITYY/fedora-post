@@ -9,7 +9,7 @@ flathub() {
     
     while true; do
         if [[ $response =~ ^(y|Y)$ ]]; then
-            flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+            flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
             echo "Flathub repo is added to Flatpak successfully."  
             break              
         

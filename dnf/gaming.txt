@@ -1,5 +1,1 @@
-steam
-lutris
-0ad
-xonotic
-supertuxkart
+steam lutris 0ad xonotic supertuxkart
